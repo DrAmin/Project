@@ -1,0 +1,18 @@
+<h1>info</h1>
+
+<table>
+	<tr>
+		<th>FirstName</th>
+		<th>LastName</th>
+		<th>email</th>
+	</tr>
+
+	<tr>
+		<td> <%= @boks.fname %> </td>
+		<td> <%= @boks.lanme %> </td>
+		<td> <%= @boks.email %> </td>
+	</tr>
+	<%= link_to("next",{:controller => 'welcome', :action=> 'home'}) %>
+
+		
+</table>

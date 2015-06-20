@@ -1,0 +1,19 @@
+<h1>info</h1>
+<%= render 'cars' %>
+<table>
+	<tr>
+		<th>FirstName</th>
+		<th>LastName</th>
+		<th>email</th>
+	</tr>
+    <% for c in cars %>
+	<tr>
+		<td> <%= c.fname %> </td>
+		<td> <%= c.lanme %> </td>
+		<td> <%= c.email %> </td>
+	</tr>
+	<%= link_to("next",{:controller => 'welcome', :action=> 'home'}) %>
+	<% end %>
+
+
+</table>	

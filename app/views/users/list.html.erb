@@ -1,0 +1,20 @@
+<h1>info</h1>
+
+<table>
+	<tr>
+		<th>FirstName</th>
+		<th>LastName</th>
+		<th>email</th>
+	</tr>
+    <%@users.each do |usrs| %>
+	<tr>
+		<td> <%= usrs.fname %> </td>
+		<td> <%= usrs.lanme %> </td>
+		<td> <%= usrs.email %> </td>
+	</tr>
+	<%= link_to("next",{:controller => 'welcome', :action=> 'home'}) %>
+	<% end %>
+
+
+</table>	
+		
